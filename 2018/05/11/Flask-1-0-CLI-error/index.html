@@ -365,7 +365,6 @@
     <div class="comments" id="comments">
       <div id="gitalk-container"></div>
     </div>
-
   
 
 
@@ -628,19 +627,18 @@
         var gitalk = new Gitalk({
           clientID: 'f7650e472348726cf855',
           clientSecret: '5a109da7d0ac0e6ceeafb08ba763a29de0ca9dfe',
-          repo: 'git@github.com:skykui/skykui.github.io.git',
+          repo: 'skykui.github.io',
           owner: 'skykui',
           admin: ['skykui'],
           id: location.pathname,
-          labels: 'gitalk',
           perPage: 15,
           pagerDirection: 'last',
-          createIssueManually: true,
+          createIssueManually: false,
           distractionFreeMode: false
         })
-
         gitalk.render('gitalk-container')           
        </script>
+
 
 
   
