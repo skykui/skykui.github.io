@@ -320,20 +320,30 @@
       
         
           
-          IssueWhen configurating this blog’s comment function, a error shows up. 
+            <h2 id="Issue"><a href="#Issue" class="headerlink" title="Issue"></a>Issue</h2><p>When configurating this blog’s comment function, a error shows up. </p>
+<blockquote>
+<p>Error message:<br>“Error: u.concat(…).join is not a function”</p>
+</blockquote>
+<p><img src="https://ddr3pa.dm.files.1drv.com/y4meR3Y_9y4Us66zVUV-UmJk5O8-v4Ioak7_q8ZUNpQqdZ5wK-La75I812ZaiuP850yQGyzhOTXxRgMvMqGjsr3SzXycy57FQjZXlbGioNmYlEKYTS77uo5-UKuvzCeLNm0uZenoXXehUO9YAodQsb_Nfx6CI2JWc-GDcLk3Jp5B38A8MYrMiKvyptGjv0EBFIMrhRyVsRYf__EHiEHh45dMQ?width=660&amp;height=142&amp;cropmode=none" alt="gitalk-config-error"></p>
+<h2 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h2><p>I’m pretty sure that his issue is rare and can be solved as I don’t find much information online. One related post is the git project of Gitalk and a closed issue submit by the author. Unfortunately, he just solved it with no clues.</p>
+<p><a href="https://github.com/gitalk/gitalk/issues/114" target="_blank" rel="noopener">Gitalk issue#114</a></p>
+<h2 id="Causes-and-solutions"><a href="#Causes-and-solutions" class="headerlink" title="Causes and solutions"></a>Causes and solutions</h2><p>After searching and investigating error messages in Chrome developer tool, I located the error in configuration.<br>I setup my comment function following a online tutorial.<br>The so-called most complete tutorial do suggest a complete configuration as:<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">gitalk:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  ClientID:</span> <span class="string">xxxxxx</span></span><br><span class="line"><span class="attr">  ClientSecret:</span> <span class="string">xxxxxxxxxxxx</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">gitalk</span></span><br><span class="line"><span class="attr">  owner:</span> <span class="string">geedme</span></span><br><span class="line"><span class="attr">  adminUser:</span> <span class="string">geedme</span></span><br><span class="line"><span class="attr">  ID:</span> <span class="string">location.pathname</span></span><br><span class="line"><span class="attr">  labels:</span> <span class="string">gitalk</span></span><br><span class="line"><span class="attr">  perPage:</span> <span class="number">15</span></span><br><span class="line"><span class="attr">  pagerDirection:</span> <span class="string">last</span></span><br><span class="line"><span class="attr">  createIssueManually:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  distractionFreeMode:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure></p>
+<p>The issue is caused by the item “labels: gitalk”.</p>
+<blockquote>
+<p>The concat() method is used to join two or more arrays.</p>
+<p>This method does not change the existing arrays, but returns a new array, containing the values of the joined arrays.</p>
+</blockquote>
+<p>Simply changing this item to “labels: [gitalk]” makes it work.</p>
+<p>Conclusion:</p>
+<p>It’s a really simple issue just that it is hidden.</p>
+<ol>
+<li>Most users won’t include “labels” in their “gitalk.swig” file. The default value is used without issue.</li>
+<li>The author saw this issue but never found the actually reason.</li>
+<li>Tutorial user doesn’t expose this issue.</li>
+<li>Error message doesn’t explain the real location of the root cause.</li>
+</ol>
 
-Error message:“Error: u.concat(…).join is not a function”
-
-
-AnalysisI’m pret
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/05/11/gitalk-config-error/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
         
       
     </div>
@@ -451,15 +461,8 @@ AnalysisI’m pret
       
         
           
+            
           
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/05/11/Flask-1-0-CLI-error/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
@@ -603,11 +606,7 @@ AnalysisI’m pret
 
 
 
-  <span class="post-meta-divider">|</span>
 
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 
