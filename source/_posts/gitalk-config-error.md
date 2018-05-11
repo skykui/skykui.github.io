@@ -3,7 +3,7 @@ title: Gitalk config error
 tags:
   - Hexo
   - Gitalk
-catagories:
+categories:
   - Hexo
 date: 2018-05-11 15:54:28
 ---
