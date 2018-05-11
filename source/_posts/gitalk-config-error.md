@@ -1,11 +1,13 @@
 ---
 title: Gitalk config error
-catagories:
-- Hexo
 tags:
-- Hexo
-- Gitalk
+  - Hexo
+  - Gitalk
+catagories:
+  - Hexo
+date: 2018-05-11 15:54:28
 ---
+
 Issue
 --------------
 When configurating this blog's comment function, a error shows up. 

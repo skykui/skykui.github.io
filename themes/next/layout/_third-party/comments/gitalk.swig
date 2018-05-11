@@ -12,7 +12,6 @@
           owner: '{{ theme.gitalk.owner }}',
           admin: ['{{ theme.gitalk.adminUser }}'],
           id: {{ theme.gitalk.ID }},
-          labels: '{{ theme.gitalk.labels }}',
           perPage: {{ theme.gitalk.perPage }},
           pagerDirection: '{{ theme.gitalk.pagerDirection }}',
           createIssueManually: {{ theme.gitalk.createIssueManually }},
