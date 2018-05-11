@@ -10,7 +10,7 @@ date: 2018-05-11 15:54:28
 
 Issue
 --------------
-When configurating this blog's comment function, a error shows up. 
+When configurating this blog's comment function, an error shows up. 
 > Error message:
 > "Error: u.concat(...).join is not a function"
 
