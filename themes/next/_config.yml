@@ -811,3 +811,17 @@ images: images
 
 # Theme version
 version: 5.1.4
+
+gitalk:
+  enable: true
+  ClientID: f7650e472348726cf855
+  ClientSecret: 5a109da7d0ac0e6ceeafb08ba763a29de0ca9dfe
+  repo: skykui.github.io
+  owner: skykui
+  adminUser: skykui
+  ID: location.pathname
+  labels: ['Gitalk']
+  perPage: 15
+  pagerDirection: last
+  createIssueManually: false
+  distractionFreeMode: false
