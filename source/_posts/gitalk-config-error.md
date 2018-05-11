@@ -49,6 +49,9 @@ The issue is caused by the item "labels: gitalk".
 >This method does not change the existing arrays, but returns a new array, containing the values of the joined arrays.
 
 Simply changing this item to "labels: [gitalk]" makes it work.
+Or, delete this line in the "gitalk.swig" file:
+```labels: {{ theme.gitalk.labels }},```
+This method makes the plugin use the default value.
 
 Conclusion:
 
