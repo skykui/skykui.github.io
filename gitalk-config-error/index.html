@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="">
+<html class="theme-next gemini use-motion" lang="en,zh-Hans,default">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -83,12 +83,12 @@
 <meta name="keywords" content="Hexo,Gitalk">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Gitalk config error">
-<meta property="og:url" content="http://www.skykui.com/2018/05/11/gitalk-config-error/index.html">
+<meta property="og:url" content="http://www.skykui.com/gitalk-config-error/index.html">
 <meta property="og:site_name" content="Ye Chuang&#39;s Blog">
 <meta property="og:description" content="IssueWhen configurating this blog’s comment function, a error shows up.   Error message:“Error: u.concat(…).join is not a function”   AnalysisI’m pretty sure that his issue is rare and can be solved a">
-<meta property="og:locale" content="default">
+<meta property="og:locale" content="en">
 <meta property="og:image" content="https://ddr3pa.dm.files.1drv.com/y4meR3Y_9y4Us66zVUV-UmJk5O8-v4Ioak7_q8ZUNpQqdZ5wK-La75I812ZaiuP850yQGyzhOTXxRgMvMqGjsr3SzXycy57FQjZXlbGioNmYlEKYTS77uo5-UKuvzCeLNm0uZenoXXehUO9YAodQsb_Nfx6CI2JWc-GDcLk3Jp5B38A8MYrMiKvyptGjv0EBFIMrhRyVsRYf__EHiEHh45dMQ?width=660&height=142&cropmode=none">
-<meta property="og:updated_time" content="2018-05-11T09:04:40.137Z">
+<meta property="og:updated_time" content="2018-05-11T09:34:10.771Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Gitalk config error">
 <meta name="twitter:description" content="IssueWhen configurating this blog’s comment function, a error shows up.   Error message:“Error: u.concat(…).join is not a function”   AnalysisI’m pretty sure that his issue is rare and can be solved a">
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="http://www.skykui.com/2018/05/11/gitalk-config-error/"/>
+  <link rel="canonical" href="http://www.skykui.com/gitalk-config-error/"/>
 
 
 
@@ -140,7 +140,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
   
@@ -255,7 +255,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.skykui.com/2018/05/11/gitalk-config-error/">
+    <link itemprop="mainEntityOfPage" href="http://www.skykui.com/gitalk-config-error/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ye Chuang">
@@ -357,7 +357,7 @@
 <p>The concat() method is used to join two or more arrays.</p>
 <p>This method does not change the existing arrays, but returns a new array, containing the values of the joined arrays.</p>
 </blockquote>
-<p>Simply changing this item to “labels: [gitalk]” makes it work.</p>
+<p>Simply changing this item to “labels: [gitalk]” makes it work.<br>Or, delete this line in the “gitalk.swig” file:<br><code>labels: ,</code><br>This method makes the plugin use the default value.</p>
 <p>Conclusion:</p>
 <p>It’s a really simple issue just that it is hidden.</p>
 <ol>
@@ -398,7 +398,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/11/Flask-1-0-CLI-error/" rel="next" title="Flask >=1.0 CLI error">
+              <a href="/Flask-1-0-CLI-error/" rel="next" title="Flask >=1.0 CLI error">
                 <i class="fa fa-chevron-left"></i> Flask >=1.0 CLI error
               </a>
             
