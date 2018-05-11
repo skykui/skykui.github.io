@@ -81,7 +81,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="All tags">
-<meta property="og:url" content="https://skykui.github.io/tags/index.html">
+<meta property="og:url" content="https://www.skykui.com/tags/index.html">
 <meta property="og:site_name" content="Ye Chuang&#39;s Blog">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2018-04-19T03:28:40.428Z">
@@ -116,7 +116,7 @@
 
 
 
-  <link rel="canonical" href="https://skykui.github.io/tags/"/>
+  <link rel="canonical" href="https://www.skykui.com/tags/"/>
 
 
 
@@ -281,6 +281,13 @@
           
 
   
+    <div class="comments" id="comments">
+      <div id="gitalk-container"></div>
+    </div>
+
+  
+
+
 
 
 
@@ -314,6 +321,15 @@
 
           <nav class="site-state motion-element">
 
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
             
 
             
@@ -520,6 +536,30 @@
 
 
 
+
+
+
+  <link rel="stylesheet" href="/lib/gitalk/gitalk.css">
+
+  <script src="/lib/gitalk/gitalk.min.js"></script>
+
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: 'f7650e472348726cf855',
+          clientSecret: '5a109da7d0ac0e6ceeafb08ba763a29de0ca9dfe',
+          repo: 'git@github.com:skykui/skykui.github.io.git',
+          owner: 'skykui',
+          admin: ['skykui'],
+          id: location.pathname,
+          labels: 'gitalk',
+          perPage: 15,
+          pagerDirection: 'last',
+          createIssueManually: true,
+          distractionFreeMode: false
+        })
+
+        gitalk.render('gitalk-container')           
+       </script>
 
 
   
