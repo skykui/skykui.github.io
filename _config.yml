@@ -4,15 +4,15 @@
 
 # Site
 title: Ye Chuang's Blog
-subtitle:
-description:
+subtitle: Keep Learning, Keep Runing
+description: Keep Learning, Keep Runing
 author: Ye Chuang
 language:
 timezone: Asia/Singapore
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://www.skykui.com/
+url: http://www.skykui.com/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
