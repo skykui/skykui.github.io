@@ -492,7 +492,7 @@
 <blockquote>
 <p>Error: Could not import “…”</p>
 </blockquote>
-<p>After checking Flask documents and source code, the issue is pretty easy to be solve.<br>Since Flask &gt;=1.0, the setting of FLASK_APP should be the module name instead of absolute path. It also assumes that you are currently in the project folder which includes then entry point of your app.<br>Therefore, the correct way set your Flask CLI environment variable should be like:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FLASK_APP=app.py</span><br></pre></td></tr></table></figure></p>
+<p>After checking Flask documents and source code, the issue is pretty easy to solve.<br>Since Flask &gt;=1.0, the setting of FLASK_APP should be the module name instead of the absolute path. It also assumes that you are currently in the project folder which includes the entry point of your app.<br>Therefore, the correct way set your Flask CLI environment variable should be like:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FLASK_APP=app.py</span><br></pre></td></tr></table></figure></p>
 
           
         
