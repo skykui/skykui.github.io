@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="For Flask &amp;lt;= 0.12.4, you can set environment variable as123456789to use Flask CLI.If you upgrade Flask to &amp;gt;=1.0, you must be careful because your commands will be broken. The error could be:&amp;gt;">
+<meta name="description" content="For Flask &amp;lt;= 0.12.4, you can set environment variable as1FLASK_APP=Path/to/your/app.py to use Flask CLI. If you upgrade Flask to &amp;gt;=1.0, you must be careful because your commands will be broken.">
 <meta name="keywords" content="Flask">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Flask &gt;=1.0 CLI error">
 <meta property="og:url" content="http://www.skykui.com/Flask-1-0-CLI-error/index.html">
 <meta property="og:site_name" content="Ye Chuang&#39;s Blog">
-<meta property="og:description" content="For Flask &amp;lt;= 0.12.4, you can set environment variable as123456789to use Flask CLI.If you upgrade Flask to &amp;gt;=1.0, you must be careful because your commands will be broken. The error could be:&amp;gt;">
+<meta property="og:description" content="For Flask &amp;lt;= 0.12.4, you can set environment variable as1FLASK_APP=Path/to/your/app.py to use Flask CLI. If you upgrade Flask to &amp;gt;=1.0, you must be careful because your commands will be broken.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-05-21T05:29:51.210Z">
+<meta property="og:updated_time" content="2018-05-21T05:31:50.318Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Flask &gt;=1.0 CLI error">
-<meta name="twitter:description" content="For Flask &amp;lt;= 0.12.4, you can set environment variable as123456789to use Flask CLI.If you upgrade Flask to &amp;gt;=1.0, you must be careful because your commands will be broken. The error could be:&amp;gt;">
+<meta name="twitter:description" content="For Flask &amp;lt;= 0.12.4, you can set environment variable as1FLASK_APP=Path/to/your/app.py to use Flask CLI. If you upgrade Flask to &amp;gt;=1.0, you must be careful because your commands will be broken.">
 
 
 
@@ -320,7 +320,13 @@
       
 
       
-        <p>For Flask &lt;= 0.12.4, you can set environment variable as<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">to use Flask CLI.</span><br><span class="line"></span><br><span class="line">If you upgrade Flask to &gt;=1.0, you must be careful because your commands will be broken. The error could be:</span><br><span class="line">&gt; Error: Could not import &quot;...&quot;</span><br><span class="line"></span><br><span class="line">After checking Flask documents and source code, the issue is pretty easy to be solve.</span><br><span class="line">Since Flask &gt;=1.0, the setting of FLASK_APP should be the module name instead of absolute path. It also assumes that you are currently in the project folder which includes then entry point of your app.</span><br><span class="line">Therefore, the correct way set your Flask CLI environment variable should be like:</span><br><span class="line">```FLASK_APP=app.py</span><br></pre></td></tr></table></figure></p>
+        <p>For Flask &lt;= 0.12.4, you can set environment variable as<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FLASK_APP=Path/to/your/app.py</span><br></pre></td></tr></table></figure></p>
+<p>to use Flask CLI.</p>
+<p>If you upgrade Flask to &gt;=1.0, you must be careful because your commands will be broken. The error could be:</p>
+<blockquote>
+<p>Error: Could not import “…”</p>
+</blockquote>
+<p>After checking Flask documents and source code, the issue is pretty easy to be solve.<br>Since Flask &gt;=1.0, the setting of FLASK_APP should be the module name instead of absolute path. It also assumes that you are currently in the project folder which includes then entry point of your app.<br>Therefore, the correct way set your Flask CLI environment variable should be like:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FLASK_APP=app.py</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
