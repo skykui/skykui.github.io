@@ -1,1 +1,2 @@
 User-agent: *
+Sitemap: https://skykui.github.io/sitemap.xml
