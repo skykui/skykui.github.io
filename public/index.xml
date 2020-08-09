@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jane - A super concise theme for Hugo</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Jane - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 11 May 2018 15:54:28 +0000</lastBuildDate>
+    
+        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      
+        <description>&lt;p&gt;Placeholder&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Gitalk config error</title>
+      <link>http://localhost:1313/post/gitalk-config-error/</link>
+      <pubDate>Fri, 11 May 2018 15:54:28 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/gitalk-config-error/</guid>
+      
+        <description>&lt;h2 id=&#34;issue&#34;&gt;Issue&lt;/h2&gt;
+&lt;p&gt;When configurating this blog&amp;rsquo;s comment function, an error shows up.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Error message:
+&amp;ldquo;Error: u.concat(&amp;hellip;).join is not a function&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://ddr3pa.dm.files.1drv.com/y4meR3Y_9y4Us66zVUV-UmJk5O8-v4Ioak7_q8ZUNpQqdZ5wK-La75I812ZaiuP850yQGyzhOTXxRgMvMqGjsr3SzXycy57FQjZXlbGioNmYlEKYTS77uo5-UKuvzCeLNm0uZenoXXehUO9YAodQsb_Nfx6CI2JWc-GDcLk3Jp5B38A8MYrMiKvyptGjv0EBFIMrhRyVsRYf__EHiEHh45dMQ?width=660&amp;amp;height=142&amp;amp;cropmode=none&#34; alt=&#34;gitalk-config-error&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;analysis&#34;&gt;Analysis&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m pretty sure that his issue is rare and can be solved as I don&amp;rsquo;t find much information online. One related post is the git project of Gitalk and a closed issue submit by the author. Unfortunately, he just solved it with no clues.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/gitalk/gitalk/issues/114&#34;&gt;Gitalk issue#114&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;causes-and-solutions&#34;&gt;Causes and solutions&lt;/h2&gt;
+&lt;p&gt;After searching and investigating error messages in Chrome developer tool, I located the error in configuration.
+I setup my comment function following a online tutorial.
+The so-called most complete tutorial do suggest a complete configuration as:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;gitalk&lt;/span&gt;:
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;enable&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;ClientID&lt;/span&gt;: xxxxxx
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;ClientSecret&lt;/span&gt;: xxxxxxxxxxxx
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;repo&lt;/span&gt;: gitalk
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;owner&lt;/span&gt;: geedme
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;adminUser&lt;/span&gt;: geedme
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;ID&lt;/span&gt;: location.pathname
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;labels&lt;/span&gt;: gitalk
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;perPage&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;pagerDirection&lt;/span&gt;: last
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;createIssueManually&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;distractionFreeMode&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The issue is caused by the item &amp;ldquo;labels: gitalk&amp;rdquo;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The concat() method is used to join two or more arrays.&lt;/p&gt;
+&lt;p&gt;This method does not change the existing arrays, but returns a new array, containing the values of the joined arrays.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Simply changing this item to &amp;ldquo;labels: [gitalk]&amp;rdquo; makes it work.
+Or, delete this line in the &amp;ldquo;gitalk.swig&amp;rdquo; file:
+&lt;code&gt;labels: {{ theme.gitalk.labels }},&lt;/code&gt;
+This method makes the plugin use the default value.&lt;/p&gt;
+&lt;p&gt;Conclusion:&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a really simple issue just that it is hidden.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Most users won&amp;rsquo;t include &amp;ldquo;labels&amp;rdquo; in their &amp;ldquo;gitalk.swig&amp;rdquo; file. The default value is used without issue.&lt;/li&gt;
+&lt;li&gt;The author saw this issue but never found the actually reason.&lt;/li&gt;
+&lt;li&gt;Tutorial user doesn&amp;rsquo;t expose this issue.&lt;/li&gt;
+&lt;li&gt;Error message doesn&amp;rsquo;t explain the real location of the root cause.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Flask &gt;=1.0 CLI error</title>
+      <link>http://localhost:1313/post/flask-1-0-cli-error/</link>
+      <pubDate>Fri, 11 May 2018 11:07:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/flask-1-0-cli-error/</guid>
+      
+        <description>&lt;p&gt;For Flask &amp;lt;= 0.12.4, you can set environment variable as
+&lt;code&gt;FLASK_APP=Path/to/your/app.py&lt;/code&gt;
+to use Flask CLI.&lt;/p&gt;
+&lt;p&gt;If you upgrade Flask to &amp;gt;=1.0, you must be careful because your commands will be broken. The error could be:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Error: Could not import &amp;ldquo;&amp;hellip;&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;After checking Flask documents and source code, the issue is pretty easy to be solve.
+Since Flask &amp;gt;=1.0, the setting of FLASK_APP should be the module name instead of absolute path. It also assumes that you are currently in the project folder which includes then entry point of your app.
+Therefore, the correct way set your Flask CLI environment variable should be like:
+```FLASK_APP=app.py``&lt;/p&gt;
+</description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Jane - A super concise theme for Hugo</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on Jane - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 11 May 2018 15:54:28 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gitalk config error</title>
+      <link>http://localhost:1313/post/gitalk-config-error/</link>
+      <pubDate>Fri, 11 May 2018 15:54:28 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/gitalk-config-error/</guid>
+      <description>Issue When configurating this blog&amp;rsquo;s comment function, an error shows up.
+ Error message: &amp;ldquo;Error: u.concat(&amp;hellip;).join is not a function&amp;rdquo;
+ Analysis I&amp;rsquo;m pretty sure that his issue is rare and can be solved as I don&amp;rsquo;t find much information online. One related post is the git project of Gitalk and a closed issue submit by the author. Unfortunately, he just solved it with no clues.
+Gitalk issue#114
+Causes and solutions After searching and investigating error messages in Chrome developer tool, I located the error in configuration.</description>
+    </item>
+    
+    <item>
+      <title>Flask &gt;=1.0 CLI error</title>
+      <link>http://localhost:1313/post/flask-1-0-cli-error/</link>
+      <pubDate>Fri, 11 May 2018 11:07:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/flask-1-0-cli-error/</guid>
+      <description>For Flask &amp;lt;= 0.12.4, you can set environment variable as FLASK_APP=Path/to/your/app.py to use Flask CLI.
+If you upgrade Flask to &amp;gt;=1.0, you must be careful because your commands will be broken. The error could be:
+ Error: Could not import &amp;ldquo;&amp;hellip;&amp;rdquo;
+ After checking Flask documents and source code, the issue is pretty easy to be solve. Since Flask &amp;gt;=1.0, the setting of FLASK_APP should be the module name instead of absolute path.</description>
+    </item>
+    
+  </channel>
+</rss>
