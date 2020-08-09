@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://skykui.github.io/about/</loc>
+    <lastmod>2017-08-28T21:41:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://skykui.github.io/categories/</loc>
+    <lastmod>2018-05-11T15:54:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://skykui.github.io/tags/gitalk/</loc>
+    <lastmod>2018-05-11T15:54:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://skykui.github.io/post/gitalk-config-error/</loc>
+    <lastmod>2018-05-11T15:54:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://skykui.github.io/tags/hexo/</loc>
+    <lastmod>2018-05-11T15:54:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://skykui.github.io/categories/hexo/</loc>
+    <lastmod>2018-05-11T15:54:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://skykui.github.io/post/</loc>
+    <lastmod>2018-05-11T15:54:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://skykui.github.io/</loc>
+    <lastmod>2018-05-11T15:54:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://skykui.github.io/tags/</loc>
+    <lastmod>2018-05-11T15:54:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://skykui.github.io/tags/flask/</loc>
+    <lastmod>2018-05-11T11:07:29+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://skykui.github.io/post/flask-1-0-cli-error/</loc>
+    <lastmod>2018-05-11T11:07:29+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+</urlset>
