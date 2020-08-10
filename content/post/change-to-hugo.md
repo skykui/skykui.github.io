@@ -9,7 +9,9 @@ draft: true
 - [Initialization](#initialization)
 - [Deployment](#deployment)
   - [Automatic scripts](#automatic-scripts)
+  - [Travis-CI](#travis-ci)
 - [Lessons Learned](#lessons-learned)
+- [Conclusion](#conclusion)
 
 # Background
 Years ago I moved my blog host from WordPress to GitHub+Hexo. I didn't write much since then. Recently I decide to pickup writing again, and surprisingly many people suggest Hugo. The main reason behind is that Hugo can compile the static pages much faster than Hexo especially when your pages are accumulated to a considerable amount.
@@ -32,8 +34,6 @@ I work on Win 10 now so this article is based on this presumption.
   - My previous blog is build in the way that the source codes are on a branch "hexo" and the deployed files are pushed to branch "master".
   - 
 # Deployment
-
-
 ## Automatic scripts
 Follow the Hugo doc below for deploying from local.
 
@@ -42,6 +42,9 @@ Follow the Hugo doc below for deploying from local.
 There are 3 major choices. The most convenient one is to put your source code as one repository and the output in "public" in the \<USERNAME>.github.io.
 
 As explained above, I managed my last blog in one repository with different branches. I want to try the same method with Hugo. This is the method using a branch called "gh-pages". It is not hard to setup but it may cause issue when  you deploy with Travis-CI, which I learned in a hard way. See [Lessons Learned](#Lessons-Learned).
+## Travis-CI
+You can find plenty of tutorials about deploy Hugo with Travis-CI, but most are using the method of two repositories. I modified a bit to adapt to my single repository deployment.
+1. 
 
 # Lessons Learned
 - Travis-CI  
@@ -82,4 +85,8 @@ As explained above, I managed my last blog in one repository with different bran
 
   - Pending Changes
     - The Travis-CI build first failed with this error
-    - 
+
+
+# Conclusion
+If you just start from scratch, you may consider to use the "2 repositories" method to deploy your Hugo site. It is straightforward and easier to configure for Travis-CI.
+If you are like me, who want to keep one project in one repository, I hope this article can help you a bit and avoid the problems that I encountered.
