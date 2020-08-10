@@ -3,6 +3,7 @@
 
 if [ "`git status -s`" ]
 then
+    git status -s
     echo "The working directory is dirty. Please commit any pending changes."
     exit 1;
 fi
