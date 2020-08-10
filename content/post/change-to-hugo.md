@@ -1,7 +1,7 @@
 ---
 title: "Change to Hugo"
 date: 2020-08-09T22:30:32+08:00
-draft: true
+draft: false
 ---
 
 - [Background](#background)
