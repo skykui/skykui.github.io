@@ -8,6 +8,7 @@ go:
 branches:
   only:
     - hugo
+    - gh-pages
 
 install:
   # 安装最新的hugo
@@ -21,7 +22,7 @@ install:
 script:  
   # Important for travis-ci
    # 运行hugo命令
-  - git fetch --unshallow origin gh-pages && . publish_to_ghpages.sh
+  - git fetch origin gh-pages && . publish_to_ghpages.sh
 
 # after_script:
   # 部署
