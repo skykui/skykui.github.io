@@ -22,9 +22,8 @@ install:
 script:  
   # Important for travis-ci
    # 运行hugo命令
-  - git config user.name "skykui"
-  - git config user.email "skykui@gmail.com"
-  - echo "${GH_REF}"
+  - git config --global user.name "skykui"
+  - git config --global user.email "skykui@gmail.com"
   - git fetch "https://skykui:$GITHUB_TOKEN@${GH_REF}" origin gh-pages && sudo . publish_to_ghpages.sh
 
 # after_script:
