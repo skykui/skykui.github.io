@@ -1,45 +1,36 @@
 language: go
 
 go:
-  - "1.14.7"  # 指定Golang 1.14.7
+  - "1.14.7"  # Golang 1.14.7
 
 # Specify which branches to build using a safelist
-# 分支白名单限制：只有 master 分支的提交才会触发构建
+
 branches:
   only:
     - hugo
 
 install:
-  # 安装最新的hugo
+  # Install hugo
   - wget https://github.com/gohugoio/hugo/releases/download/v0.74.3/hugo_extended_0.74.3_Linux-64bit.deb
   - sudo dpkg -i hugo*.deb
   # Remove .deb to avoid being added to git
   - sudo rm hugo*.deb
-  # 安装主题
+  # install themes
   - git clone https://github.com/xianmin/hugo-theme-jane.git --depth=1 themes/jane
 
 before_script:
-# Travis-ci add --depth when clone by default, causing fetch origin/other-branch to fail
+  # Important for travis-ci
+  # Travis-ci add --depth when clone by default, causing fetch origin/other-branch to fail
   - git fetch origin +refs/heads/gh-pages:refs/remotes/origin/gh-pages
 
 script:  
-  # Important for travis-ci
-   # 运行hugo命令
+
+   # Run publish script
 
   - . publish_to_ghpages.sh
 
 # after_script:
-  # 部署
-  # - cd ./public
-  # - git init
-  # - git config user.name "[你的名字]"
-  # - git config user.email "[你的邮箱]"
-  # - git add .
-  # - git commit -m "Update Blog By TravisCI With Build $TRAVIS_BUILD_NUMBER"
-  # # Github Pages
-  # - git push --force --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master
-  # # Github Pages
-  # - git push --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master --tags
+
 
 env:
  global:
@@ -47,12 +38,11 @@ env:
    - GH_REF: github.com/skykui/skykui.github.io.git
 
 deploy:
-  provider: pages # 重要，指定这是一份github pages的部署配置
-  cleanup: false # 重要，不能省略
-  local_dir: public # 静态站点文件所在目录
-  target_branch: gh-pages # 要将静态站点文件发布到哪个分支
-  github_token: $GITHUB_TOKEN # 重要，$GITHUB_TOKEN是变量，需要在GitHub上申请、再到配置到Travis
-  # fqdn:  # 如果是自定义域名，此处要填
-  keep_history: true # 是否保持target-branch分支的提交记录
-  on:
-    branch: hugo # 博客源码的分支
+  provider: pages 
+  cleanup: false 
+  local_dir: public 
+  target_branch: gh-pages 
+  github_token: $GITHUB_TOKEN 
+  # fqdn:  # domain name
+  keep_history: true 
+  branch: hugo 
