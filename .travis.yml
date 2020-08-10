@@ -22,6 +22,7 @@ install:
 before_script:
   - git config --global user.name "skykui"
   - git config --global user.email "skykui@gmail.com"
+  - git branch -r
   - git fetch origin
 
 script:  
