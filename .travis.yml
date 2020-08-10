@@ -18,7 +18,9 @@ install:
   # 安装主题
   - git clone https://github.com/xianmin/hugo-theme-jane.git --depth=1 themes/jane
 
-script:
+script:  
+  # Important for travis-ci
+  - git fetch "https://$GITHUB_TOKEN@${GH_REF}" origin gh-pages
   # 运行hugo命令
   - . publish_to_ghpages.sh
 
