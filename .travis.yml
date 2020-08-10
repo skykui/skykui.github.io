@@ -19,10 +19,10 @@ install:
 script:
   # 运行hugo命令
   - hugo
+  - . publish_to_ghpages.sh
 
 after_script:
   # 部署
-  - . publish_to_ghpages.sh
   # - cd ./public
   # - git init
   # - git config user.name "[你的名字]"
@@ -41,11 +41,11 @@ env:
 
 deploy:
   provider: pages # 重要，指定这是一份github pages的部署配置
-  skip-cleanup: true # 重要，不能省略
-  local-dir: public # 静态站点文件所在目录
-  target-branch: gh-pages # 要将静态站点文件发布到哪个分支
-  github-token: $GITHUB_TOKEN # 重要，$GITHUB_TOKEN是变量，需要在GitHub上申请、再到配置到Travis
+  cleanup: false # 重要，不能省略
+  local_dir: public # 静态站点文件所在目录
+  target_branch: gh-pages # 要将静态站点文件发布到哪个分支
+  github_token: $GITHUB_TOKEN # 重要，$GITHUB_TOKEN是变量，需要在GitHub上申请、再到配置到Travis
   # fqdn:  # 如果是自定义域名，此处要填
-  keep-history: true # 是否保持target-branch分支的提交记录
+  keep_history: true # 是否保持target-branch分支的提交记录
   on:
     branch: hugo # 博客源码的分支
