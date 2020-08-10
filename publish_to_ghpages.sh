@@ -13,7 +13,8 @@ rm -rf public
 mkdir public
 git worktree prune
 rm -rf .git/worktrees/public/
-
+# Important for travis-ci
+git fetch origin gh-pages
 echo "Checking out gh-pages branch into public"
 git worktree add -B gh-pages public origin/gh-pages
 
@@ -24,7 +25,7 @@ echo "Generating site"
 hugo
 
 echo "Updating gh-pages branch"
-cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh) [skip travis]"
+cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh) [skip travis]" && cd ..
 
 #echo "Pushing to github"
 #git push --all
