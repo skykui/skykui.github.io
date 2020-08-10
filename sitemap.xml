@@ -9,6 +9,27 @@
   </url>
   
   <url>
+    <loc>https://skykui.github.io/post/change-to-hugo/</loc>
+    <lastmod>2020-08-09T22:30:32+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://skykui.github.io/post/</loc>
+    <lastmod>2020-08-09T22:30:32+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://skykui.github.io/</loc>
+    <lastmod>2020-08-09T22:30:32+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://skykui.github.io/categories/</loc>
     <lastmod>2018-05-11T15:54:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -38,20 +59,6 @@
   
   <url>
     <loc>https://skykui.github.io/categories/hexo/</loc>
-    <lastmod>2018-05-11T15:54:28+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://skykui.github.io/post/</loc>
-    <lastmod>2018-05-11T15:54:28+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://skykui.github.io/</loc>
     <lastmod>2018-05-11T15:54:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

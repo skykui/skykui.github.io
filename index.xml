@@ -6,7 +6,7 @@
     <description>Recent content on Skykui&#39;s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 11 May 2018 15:54:28 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2020 22:30:32 +0800</lastBuildDate>
     
         <atom:link href="https://skykui.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,6 +19,26 @@
       <guid>https://skykui.github.io/about/</guid>
       
         <description>&lt;p&gt;Placeholder&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Change to Hugo</title>
+      <link>https://skykui.github.io/post/change-to-hugo/</link>
+      <pubDate>Sun, 09 Aug 2020 22:30:32 +0800</pubDate>
+      
+      <guid>https://skykui.github.io/post/change-to-hugo/</guid>
+      
+        <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#background&#34;&gt;Background&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#setup-infrastruture&#34;&gt;Setup infrastruture&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#automatic-scripts&#34;&gt;Automatic scripts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;
+&lt;h1 id=&#34;setup-infrastruture&#34;&gt;Setup infrastruture&lt;/h1&gt;
+&lt;h1 id=&#34;automatic-scripts&#34;&gt;Automatic scripts&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;https://gohugo.io/hosting-and-deployment/hosting-on-github/&lt;/a&gt;&lt;/p&gt;
 </description>
       
     </item>
