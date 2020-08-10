@@ -20,7 +20,6 @@ install:
 
 script:
   # 运行hugo命令
-  - hugo
   - . publish_to_ghpages.sh
 
 # after_script:
