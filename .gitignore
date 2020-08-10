@@ -9,6 +9,7 @@ nohup.out
 cover.out
 *.swp
 *.swo
+*.deb
 .DS_Store
 *~
 vendor/*/
