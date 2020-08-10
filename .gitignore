@@ -26,3 +26,6 @@ resources/sunset.jpg
 
 vendor
 /.vscode
+/public
+/themes
+/resources

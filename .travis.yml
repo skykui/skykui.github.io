@@ -22,7 +22,7 @@ script:
 
 after_script:
   # 部署
-
+  - . publish_to_ghpages.sh
   # - cd ./public
   # - git init
   # - git config user.name "[你的名字]"
@@ -37,7 +37,7 @@ after_script:
 env:
  global:
    # Github Pages
-   - GH_REF: [用来部署博客的 Git 地址]
+   - GH_REF: https://github.com/skykui/skykui.github.io.git
 
 deploy:
   provider: pages # 重要，指定这是一份github pages的部署配置
