@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Skykui&#39;s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Aug 2020 22:30:32 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2020 14:26:10 +0800</lastBuildDate>
     
 	<atom:link href="https://skykui.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Test Travis Ci</title>
+      <link>https://skykui.github.io/post/test-travis-ci/</link>
+      <pubDate>Mon, 10 Aug 2020 14:26:10 +0800</pubDate>
+      
+      <guid>https://skykui.github.io/post/test-travis-ci/</guid>
+      <description>Test Travis-ci</description>
+    </item>
     
     <item>
       <title>Change to Hugo</title>

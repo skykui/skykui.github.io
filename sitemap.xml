@@ -9,21 +9,28 @@
   </url>
   
   <url>
-    <loc>https://skykui.github.io/post/change-to-hugo/</loc>
-    <lastmod>2020-08-09T22:30:32+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://skykui.github.io/post/</loc>
-    <lastmod>2020-08-09T22:30:32+08:00</lastmod>
+    <lastmod>2020-08-10T14:26:10+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://skykui.github.io/</loc>
+    <lastmod>2020-08-10T14:26:10+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://skykui.github.io/post/test-travis-ci/</loc>
+    <lastmod>2020-08-10T14:26:10+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://skykui.github.io/post/change-to-hugo/</loc>
     <lastmod>2020-08-09T22:30:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

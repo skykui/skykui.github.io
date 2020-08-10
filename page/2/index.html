@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Hexo · Skykui&#39;s Site</title>
+  <title>Skykui&#39;s Site</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -33,8 +33,8 @@
 <meta name="generator" content="Hugo 0.74.3" />
 
 
-<link rel="canonical" href="https://skykui.github.io/tags/hexo/" />
-<link href="/tags/hexo/index.xml" rel="alternate" type="application/rss+xml" title="Skykui&#39;s Site" />
+<link rel="canonical" href="https://skykui.github.io/" />
+<link href="/index.xml" rel="alternate" type="application/rss+xml" title="Skykui&#39;s Site" />
 
 
 
@@ -57,15 +57,15 @@
 
 
 
-<meta property="og:title" content="Hexo" />
+<meta property="og:title" content="Skykui&#39;s Site" />
 <meta property="og:description" content="Skykui&#39;s site." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://skykui.github.io/tags/hexo/" />
-<meta property="og:updated_time" content="2018-05-11T15:54:28+00:00" />
-<meta itemprop="name" content="Hexo">
+<meta property="og:url" content="https://skykui.github.io/" />
+<meta property="og:updated_time" content="2020-08-10T14:26:10+08:00" />
+<meta itemprop="name" content="Skykui&#39;s Site">
 <meta itemprop="description" content="Skykui&#39;s site.">
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Hexo"/>
+<meta name="twitter:title" content="Skykui&#39;s Site"/>
 <meta name="twitter:description" content="Skykui&#39;s site."/>
 
 <!--[if lte IE 9]>
@@ -214,7 +214,7 @@
   <ul id="menu" class="menu">
     
     
-        <li class="menu-item">
+        <li class="menu-item active">
         
           
           
@@ -284,27 +284,46 @@
       <div class="content-wrapper">
         <div id="content" class="content container">
           
-
-<section id="archive" class="archive">
+<section id="posts" class="posts">
+  
   
     
-      <div class="archive-title tag">
-        <h2 class="archive-name">Tag: Hexo</h2>
-      </div>
+  
+  
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/flask-1-0-cli-error/">Flask &gt;=1.0 CLI error</a>
+    </h1>
     
-  
-
-  
-    <div class="archive-post">
-      <time datetime="2018-05-11" class="archive-post-time">
+    <div class="post-meta">
+      <time datetime="2018-05-11" class="post-time">
         2018-05-11
       </time>
-      <span class="archive-post-title">
-        <a href="/post/gitalk-config-error/" class="archive-post-link">
-          Gitalk config error
-        </a>
-      </span>
+      
+      
+      
+      
     </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      For Flask &lt;= 0.12.4, you can set environment variable as FLASK_APP=Path/to/your/app.py to use Flask CLI.
+If you upgrade Flask to &gt;=1.0, you must be careful because your commands will be broken. The error could be:
+ Error: Could not import &ldquo;&hellip;&rdquo;
+ After checking Flask documents and source code, the issue is pretty easy to be solve. Since Flask &gt;=1.0, the setting of FLASK_APP should be the module name instead of absolute path.
+    </div>
+    <div class="read-more">
+      <a href="/post/flask-1-0-cli-error/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
   
 </section>
 
@@ -325,6 +344,22 @@
 
   
   
+
+  
+  
+  <nav class="pagination">
+    <ul>
+      
+      <li >
+        <a href="/">1</a>
+      </li>
+      
+      <li  class="active" >
+        <a href="/page/2/">2</a>
+      </li>
+      
+    </ul>
+  </nav>
 
   
   
