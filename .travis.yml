@@ -22,8 +22,8 @@ install:
 before_script:
   - git config --global user.name "skykui"
   - git config --global user.email "skykui@gmail.com"
-  - git fetch origin gh-pages
-  
+  - git fetch origin
+
 script:  
   # Important for travis-ci
    # 运行hugo命令
