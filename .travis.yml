@@ -40,7 +40,7 @@ script:
 env:
  global:
    # Github Pages
-   - GH_REF: https://github.com/skykui/skykui.github.io.git
+   - GH_REF: github.com/skykui/skykui.github.io.git
 
 deploy:
   provider: pages # 重要，指定这是一份github pages的部署配置
